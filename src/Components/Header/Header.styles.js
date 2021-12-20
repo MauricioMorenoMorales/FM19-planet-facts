@@ -71,9 +71,17 @@ export const Styles = styled.div`
 				& > img {
 					display: none;
 				}
+				&.opened {
+					position: static;
+				}
 			}
 			&__themes {
 				display: none;
+			}
+			&__plegable {
+				&.opened {
+					display: none;
+				}
 			}
 			&__planets {
 				display: grid;

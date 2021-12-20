@@ -16,7 +16,6 @@ const Planets = () => {
 		geology: 'planet',
 	}[dataType];
 	const textData = filteredData[dataType];
-	console.log(textData);
 	return (
 		<Styles accent={planetColor[planetName]}>
 			<Header />
