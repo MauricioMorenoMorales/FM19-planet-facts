@@ -7,7 +7,9 @@ const Header = () => {
 	const { planetName, dataType } = useParams();
 	return (
 		<Styles accent={planetColor[planetName]}>
-			<h1>{planetName}</h1>
+			<section className="header__name"></section>
+			<section className="header__themes"></section>
+			<section className="header__planets"></section>
 		</Styles>
 	);
 };
