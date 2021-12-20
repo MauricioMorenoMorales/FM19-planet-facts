@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const Styles = styled.div`
-	background-color: ${props => props.accent};
+	border-bottom: 2px solid ${props => props.accent};
 `;
