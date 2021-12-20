@@ -43,14 +43,54 @@ const Header = () => {
 				</Link>
 			</section>
 			<section className="header__planets">
-				<Link to={`/planets/mercury/${dataType}`}>Mercury</Link>
-				<Link to={`/planets/venus/${dataType}`}>Venus</Link>
-				<Link to={`/planets/earth/${dataType}`}>Earth</Link>
-				<Link to={`/planets/mars/${dataType}`}>Mars</Link>
-				<Link to={`/planets/jupiter/${dataType}`}>Jupiter</Link>
-				<Link to={`/planets/saturn/${dataType}`}>Saturn</Link>
-				<Link to={`/planets/uranus/${dataType}`}>Uranus</Link>
-				<Link to={`/planets/neptune/${dataType}`}>Neptune</Link>
+				<Link
+					className={`${planetName === 'mercury' && 'active'}`}
+					to={`/planets/mercury/${dataType}`}
+				>
+					Mercury
+				</Link>
+				<Link
+					className={`${planetName === 'venus' && 'active'}`}
+					to={`/planets/venus/${dataType}`}
+				>
+					Venus
+				</Link>
+				<Link
+					className={`${planetName === 'earth' && 'active'}`}
+					to={`/planets/earth/${dataType}`}
+				>
+					Earth
+				</Link>
+				<Link
+					className={`${planetName === 'mars' && 'active'}`}
+					to={`/planets/mars/${dataType}`}
+				>
+					Mars
+				</Link>
+				<Link
+					className={`${planetName === 'jupiter' && 'active'}`}
+					to={`/planets/jupiter/${dataType}`}
+				>
+					Jupiter
+				</Link>
+				<Link
+					className={`${planetName === 'saturn' && 'active'}`}
+					to={`/planets/saturn/${dataType}`}
+				>
+					Saturn
+				</Link>
+				<Link
+					className={`${planetName === 'uranus' && 'active'}`}
+					to={`/planets/uranus/${dataType}`}
+				>
+					Uranus
+				</Link>
+				<Link
+					className={`${planetName === 'neptune' && 'active'}`}
+					to={`/planets/neptune/${dataType}`}
+				>
+					Neptune
+				</Link>
 			</section>
 			<section className={`header__plegable ${plegableOpened && 'opened'}`}>
 				<div

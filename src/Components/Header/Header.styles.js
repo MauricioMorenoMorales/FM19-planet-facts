@@ -59,12 +59,60 @@ export const Styles = styled.div`
 				}
 			}
 		}
+		&__planets {
+			display: none;
+		}
 	}
 	@media screen and (min-width: 768px) {
 		.header {
 			&__name {
+				justify-content: center;
+				border-bottom: none;
 				& > img {
 					display: none;
+				}
+			}
+			&__themes {
+				display: none;
+			}
+			&__planets {
+				display: grid;
+				grid-template-columns: repeat(8, 1fr);
+				justify-items: center;
+				border-bottom: 1px solid ${colorSystem.basePrimaryDesaturated};
+				& a {
+					font-weight: bold;
+					height: 60px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					&.active {
+						border-bottom: 2px solid ${props => props.accent};
+					}
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 1100px) {
+		display: grid;
+		grid-template-columns: 1fr 700px;
+		height: 60px;
+		border-bottom: 1px solid ${colorSystem.basePrimaryDesaturated};
+		.header {
+			&__name {
+				justify-self: start;
+				align-self: center;
+				padding: 0;
+				padding-left: 20px;
+			}
+			&__planets {
+				border-bottom: none;
+				& a {
+					&.active {
+						border: none;
+						border-top: 2px solid ${props => props.accent};
+					}
 				}
 			}
 		}
