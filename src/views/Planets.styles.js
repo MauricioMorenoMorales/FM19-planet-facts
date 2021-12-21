@@ -39,6 +39,9 @@ export const Styles = styled.div`
 				& a {
 					font-weight: bold;
 				}
+				& p {
+					color: ${colorSystem.basePrimaryMoreDesaturated};
+				}
 			}
 			&__links {
 				display: none;
