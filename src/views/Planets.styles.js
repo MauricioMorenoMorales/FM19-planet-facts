@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { colorSystem } from '../tokens.styles';
 
 export const Styles = styled.div`
-	padding: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 	.main {
 		max-width: 330px;
 		margin: 0 auto;
@@ -32,6 +34,10 @@ export const Styles = styled.div`
 				& span {
 					margin-right: 5px;
 					font-size: 1.2rem;
+					color: ${colorSystem.basePrimaryMoreDesaturated};
+				}
+				& a {
+					font-weight: bold;
 				}
 			}
 			&__links {
@@ -96,6 +102,29 @@ export const Styles = styled.div`
 				align-items: start;
 				text-align: start;
 			}
+		}
+	}
+	@media screen and (min-width: 1100px) {
+		.main {
+			max-width: 1100px;
+			height: 600px;
+			display: grid;
+			grid-template-columns: 1fr 350px;
+			align-items: center;
+			&__description {
+				display: block;
+				&__links {
+					margin-top: 10px;
+				}
+			}
+			&__image {
+				margin: 0;
+				&__planet {
+				}
+			}
+		}
+		.stats {
+			max-width: 1100px;
 		}
 	}
 `;

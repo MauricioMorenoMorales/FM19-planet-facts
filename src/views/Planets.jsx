@@ -4,6 +4,7 @@ import { Styles } from './Planets.styles';
 import Data from '../data.json';
 import { planetColor } from '../tokens.styles.js';
 import Header from '../Components/Header/Header';
+import LinkImage from '../assets/icon-source.svg';
 
 const Planets = () => {
 	const { planetName, dataType } = useParams();
@@ -23,6 +24,7 @@ const Planets = () => {
 			<article className="main">
 				<figure className="main__image">
 					<img
+						className="main__image__planet"
 						src={window.location.origin + filteredData.images[imageType]}
 						alt=""
 					/>
@@ -40,6 +42,9 @@ const Planets = () => {
 						<p>{textData.content}</p>
 						<span>Source</span>
 						<a href={textData.source}>Wikipedia</a>
+						<span>
+							<img src={LinkImage} alt="" />
+						</span>
 					</div>
 					<div className="main__description__links">
 						<div
