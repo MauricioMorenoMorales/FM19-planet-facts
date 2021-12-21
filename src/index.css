@@ -6,6 +6,7 @@
 	--base-primary-more-desaturated: #838391;
 	--base-secondary: #ffffff;
 	--text-color-primary: #fff;
+	--text-color-primary-desaturated: #838391;
 }
 
 body {
@@ -40,33 +41,32 @@ h1 {
 
 h2 {
 	font-family: var(--font-family-accent);
-	font-size: 8rem;
-	line-height: 10.3rem;
-	letter-spacing: 0.15rem;
+	font-size: 4rem;
+	line-height: 5rem;
 }
 
 h3 {
 	font-family: var(--font-family-accent);
-	font-size: 4rem;
-	line-height: 5.2rem;
-	letter-spacing: 0.15rem;
-}
-h4 {
-	font-family: var(--font-family-accent);
-	font-size: 1.2rem;
+	font-size: 2rem;
 	line-height: 2.5rem;
-	letter-spacing: 0.26rem;
+}
+h4,
+small {
+	font-family: var(--font-family-accent);
+	font-size: 0.9rem;
+	line-height: 2.5rem;
+	font-weight: bold;
 }
 h5 {
 	font-family: var(--font-family-accent);
-	font-size: 1.1rem;
-	line-height: 2.5rem;
-	letter-spacing: 0.15rem;
+	font-size: 0.8rem;
+	line-height: 1.6rem;
+	color: var(--text-color-primary-desaturated);
 }
 p {
 	font-family: var(--font-family-primary);
-	font-size: 1.4rem;
-	line-height: 2.5rem;
+	font-size: 1.1rem;
+	line-height: 2.2rem;
 }
 a {
 	text-decoration: none;
@@ -77,4 +77,43 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+	h2 {
+		font-size: 4.8rem;
+		line-height: 6.2rem;
+	}
+	h3 {
+		font-size: 4.8rem;
+		line-height: 6.2rem;
+	}
+	h5 {
+		font-size: 0.8rem;
+		line-height: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	h2 {
+		font-size: 8rem;
+		line-height: 10.3rem;
+	}
+	p {
+		font-size: 1.4rem;
+		line-height: 2.5rem;
+	}
+	h3 {
+		font-size: 4rem;
+		line-height: 5.1rem;
+	}
+	h4,
+	small {
+		font-size: 1.2rem;
+		line-height: 2.5rem;
+	}
+	h5 {
+		font-size: 1.1rem;
+		line-height: 2.5rem;
+	}
 }

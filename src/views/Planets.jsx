@@ -34,7 +34,7 @@ const Planets = () => {
 				</figure>
 				<section className="main__description">
 					<div className="main__description__text">
-						<h1 className="main__description__title">{filteredData.name}</h1>
+						<h2 className="main__description__title">{filteredData.name}</h2>
 						<p>{textData.content}</p>
 						<span>Source</span>
 						<a href={textData.source}>Wikipedia</a>
@@ -42,15 +42,15 @@ const Planets = () => {
 					<div className="main__description__links">
 						<div className="main__description__links__item">
 							<small>01</small>
-							<p>Overview</p>
+							<h4>Overview</h4>
 						</div>
 						<div className="main__description__links__item">
 							<small>02</small>
-							<p>Internal structure</p>
+							<h4>Internal structure</h4>
 						</div>
 						<div className="main__description__links__item">
 							<small>03</small>
-							<p>Surface Geology</p>
+							<h4>Surface Geology</h4>
 						</div>
 					</div>
 				</section>
@@ -61,15 +61,15 @@ const Planets = () => {
 					<h3>{filteredData.rotation}</h3>
 				</div>
 				<div className="stat__item">
-					<h6>Revolution Time</h6>
+					<h5>Revolution Time</h5>
 					<h3>{filteredData.revolution}</h3>
 				</div>
 				<div className="stat__item">
-					<h6>Radius</h6>
+					<h5>Radius</h5>
 					<h3>{filteredData.radius}</h3>
 				</div>
 				<div className="stat__item">
-					<h6>Average Temp</h6>
+					<h5>Average Temp</h5>
 					<h3>{filteredData.temperature}</h3>
 				</div>
 			</article>

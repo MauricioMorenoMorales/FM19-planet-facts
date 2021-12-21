@@ -7,7 +7,7 @@ import BurgerIcon from '../../assets/icon-hamburger.svg';
 const Header = () => {
 	const { planetName, dataType } = useParams();
 	const navigate = useNavigate();
-	const [plegableOpened, setPlegableOpened] = useState(true);
+	const [plegableOpened, setPlegableOpened] = useState(false);
 	const changePlanet = planet => {
 		navigate(`/planets/${planet}/${dataType}`);
 		setPlegableOpened(false);
