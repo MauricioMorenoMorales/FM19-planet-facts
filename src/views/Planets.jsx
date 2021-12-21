@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { Styles } from './Planets.styles';
 import Data from '../data.json';
 import { planetColor } from '../tokens.styles.js';
@@ -7,6 +7,7 @@ import Header from '../Components/Header/Header';
 
 const Planets = () => {
 	const { planetName, dataType } = useParams();
+	const navigate = useNavigate();
 	const filteredData = Data.filter(
 		element => element.name.toLowerCase() === planetName.toLowerCase(),
 	)[0];
@@ -41,15 +42,24 @@ const Planets = () => {
 						<a href={textData.source}>Wikipedia</a>
 					</div>
 					<div className="main__description__links">
-						<div className="main__description__links__item">
+						<div
+							className="main__description__links__item"
+							onClick={() => navigate(`/planets/${planetName}/overview`)}
+						>
 							<small>01</small>
 							<h4>Overview</h4>
 						</div>
-						<div className="main__description__links__item">
+						<div
+							className="main__description__links__item"
+							onClick={() => navigate(`/planets/${planetName}/structure`)}
+						>
 							<small>02</small>
 							<h4>Internal structure</h4>
 						</div>
-						<div className="main__description__links__item">
+						<div
+							className="main__description__links__item"
+							onClick={() => navigate(`/planets/${planetName}/geology`)}
+						>
 							<small>03</small>
 							<h4>Surface Geology</h4>
 						</div>

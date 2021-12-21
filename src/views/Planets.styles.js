@@ -52,4 +52,50 @@ export const Styles = styled.div`
 			border: 1px solid ${colorSystem.basePrimaryDesaturated};
 		}
 	}
+	@media screen and (min-width: 768px) {
+		.main {
+			max-width: 700px;
+			&__description {
+				display: grid;
+				grid-template-columns: 1fr 290px;
+				text-align: start;
+				align-items: end;
+				&__links {
+					display: block;
+					margin-bottom: 40px;
+					&__item {
+						display: flex;
+						align-items: center;
+						padding: 10px;
+						border: 1px solid ${colorSystem.basePrimaryDesaturated};
+						margin-bottom: 8px;
+						cursor: pointer;
+						&:hover {
+							background-color: ${props => props.accent};
+						}
+						& small {
+							margin-right: 20px;
+						}
+					}
+				}
+				&__text {
+					padding-right: 30px;
+				}
+			}
+		}
+		.stats {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			margin: 0 auto;
+			max-width: 700px;
+			margin-top: 70px;
+			gap: 8px;
+			&__item {
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				text-align: start;
+			}
+		}
+	}
 `;
