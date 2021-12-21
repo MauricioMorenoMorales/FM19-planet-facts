@@ -27,6 +27,7 @@ const Planets = () => {
 					/>
 					{dataType === 'geology' && (
 						<img
+							className="main__image__surface"
 							src={window.location.origin + filteredData.images.geology}
 							alt=""
 						/>
@@ -56,19 +57,19 @@ const Planets = () => {
 				</section>
 			</article>
 			<article className="stats">
-				<div className="stat__item">
-					<h6>Rotation Time</h6>
+				<div className="stats__item">
+					<h5>Rotation Time</h5>
 					<h3>{filteredData.rotation}</h3>
 				</div>
-				<div className="stat__item">
+				<div className="stats__item">
 					<h5>Revolution Time</h5>
 					<h3>{filteredData.revolution}</h3>
 				</div>
-				<div className="stat__item">
+				<div className="stats__item">
 					<h5>Radius</h5>
 					<h3>{filteredData.radius}</h3>
 				</div>
-				<div className="stat__item">
+				<div className="stats__item">
 					<h5>Average Temp</h5>
 					<h3>{filteredData.temperature}</h3>
 				</div>
