@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/FM19-planet-facts/static/css/main.0e42032c.css",
+    "main.js": "/FM19-planet-facts/static/js/main.d48e4a3e.js",
+    "static/js/787.c282698e.chunk.js": "/FM19-planet-facts/static/js/787.c282698e.chunk.js",
+    "static/media/background-stars.svg": "/FM19-planet-facts/static/media/background-stars.f6233a6a8d2351c57f2b.svg",
+    "index.html": "/FM19-planet-facts/index.html",
+    "static/media/icon-source.svg": "/FM19-planet-facts/static/media/icon-source.90231c6845b7449a736412f3da2e3aaa.svg",
+    "static/media/icon-hamburger.svg": "/FM19-planet-facts/static/media/icon-hamburger.05a40a49142005f6faf230286ab38214.svg",
+    "main.0e42032c.css.map": "/FM19-planet-facts/static/css/main.0e42032c.css.map",
+    "main.d48e4a3e.js.map": "/FM19-planet-facts/static/js/main.d48e4a3e.js.map",
+    "787.c282698e.chunk.js.map": "/FM19-planet-facts/static/js/787.c282698e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e42032c.css",
+    "static/js/main.d48e4a3e.js"
+  ]
+}
