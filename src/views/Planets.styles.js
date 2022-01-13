@@ -38,6 +38,8 @@ export const Styles = styled.div`
 				}
 				& a {
 					font-weight: bold;
+					color: ${colorSystem.basePrimaryMoreDesaturated};
+					text-decoration: underline;
 				}
 				& p {
 					color: ${colorSystem.basePrimaryMoreDesaturated};
@@ -114,6 +116,7 @@ export const Styles = styled.div`
 			display: grid;
 			grid-template-columns: 1fr 350px;
 			align-items: center;
+			margin-top: 140px;
 			&__description {
 				display: block;
 				&__links {
